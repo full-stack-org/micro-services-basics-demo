@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: zuul-gate-way-app
+    
+server:
+  port: 8765
+
+zuul:
+  host:
+    connect-timeout-millis: 15000000
+    socket-timeout-millis: 15000000
+    connection-request-timeout-millis: 15000000  
+
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 9000000
+  ConnectTimeout: 9000000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000000
+  

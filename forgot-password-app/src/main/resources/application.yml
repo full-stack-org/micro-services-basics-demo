@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: forgot-password-app
+    
+server:  port: 8082
+  
+hystrix:  dashboard:    proxy-stream-allow-list:    - "*"
